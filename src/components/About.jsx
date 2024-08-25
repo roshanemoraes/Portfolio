@@ -16,7 +16,7 @@ const About = () => {
   useEffect(() => {
     const intervalId = setInterval(() => {
       handleNextClick();
-    }, 4000); // Change the image every 4 seconds
+    }, 2500); // Change the image every 4 seconds
 
     return () => clearInterval(intervalId); // Clean up the interval on component unmount
   }, []);
@@ -29,7 +29,7 @@ const About = () => {
         prevIndex === 0 ? images.length - 1 : prevIndex - 1
       );
       setIsTransitioning(false);
-    }, 300); // Match the duration with the CSS transition
+    }, 800); // Match the duration with the CSS transition
   };
 
   const handleNextClick = () => {
@@ -40,7 +40,7 @@ const About = () => {
         prevIndex === images.length - 1 ? 0 : prevIndex + 1
       );
       setIsTransitioning(false);
-    }, 300); // Match the duration with the CSS transition
+    }, 800); // Match the duration with the CSS transition
   };
 
   return (
