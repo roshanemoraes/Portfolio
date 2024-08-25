@@ -46,43 +46,45 @@ const Header = () => {
         </svg>
       </button>
       <div className="flex-grow flex justify-center">
-        <nav
-          className={`navbar-menu ${
-            menuOpen ? "block" : "hidden"
-          } md:flex gap-12 transition-all duration-300 w-full md:w-auto`}
-        >
-          <a
-            className="text-lg font-medium text-gray-300 transition-colors hover:text-white underline-animation"
-            href="#about-me"
+        {!menuOpen && (
+          <nav
+            className={`navbar-menu ${
+              menuOpen ? "block" : "hidden"
+            } md:flex gap-12 transition-all duration-300 w-full md:w-auto`}
           >
-            ABOUT ME
-          </a>
-          <a
-            className="text-lg font-medium text-gray-300 transition-colors hover:text-white underline-animation"
-            href="/#technologies"
-          >
-            TECHNOLOGIES
-          </a>
-          <a
-            className="text-lg font-medium text-gray-300 transition-colors hover:text-white underline-animation"
-            href="/#experience"
-          >
-            EDUCATION
-          </a>
-          <a
-            className="text-lg font-medium text-gray-300 transition-colors hover:text-white underline-animation"
-            href="/#projects"
-          >
-            PROJECTS
-          </a>
+            <a
+              className="text-lg font-medium text-gray-300 transition-colors hover:text-white underline-animation"
+              href="#about-me"
+            >
+              ABOUT ME
+            </a>
+            <a
+              className="text-lg font-medium text-gray-300 transition-colors hover:text-white underline-animation"
+              href="/#technologies"
+            >
+              TECHNOLOGIES
+            </a>
+            <a
+              className="text-lg font-medium text-gray-300 transition-colors hover:text-white underline-animation"
+              href="/#experience"
+            >
+              EDUCATION
+            </a>
+            <a
+              className="text-lg font-medium text-gray-300 transition-colors hover:text-white underline-animation"
+              href="/#projects"
+            >
+              PROJECTS
+            </a>
 
-          <a
-            className="text-lg font-medium text-gray-300 transition-colors hover:text-white underline-animation"
-            href="/#contact-me"
-          >
-            CONTACT ME
-          </a>
-        </nav>
+            <a
+              className="text-lg font-medium text-gray-300 transition-colors hover:text-white underline-animation"
+              href="/#contact-me"
+            >
+              CONTACT ME
+            </a>
+          </nav>
+        )}
       </div>
       <div className="hidden md:flex items-center gap-6">
         <a
