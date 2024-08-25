@@ -60,6 +60,6 @@ export const PROJECTS = [
 
 export const CONTACT = {
   address: "Bandaranayake Mawatha, Moratuwa 10400 ",
-  phoneNo: "+12 4555 666 00 ",
+  phoneNo: "+94 71 616 8785",
   email: "adam.21@cse.mrt.ac.lk",
 };
