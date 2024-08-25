@@ -56,13 +56,13 @@ const Hero = () => {
               initial="hidden"
               animate="visible"
               className="my-2 max-w-[890px] py-6 font-light tracking-tighter text-justify"
-              style={{ wordSpacing: '0.3em' }} 
+              style={{ wordSpacing: "0.3em" }}
             >
               {HERO_CONTENT}
             </motion.p>
           </div>
         </div>
-        <div className="w-full ml-[100px] lg:w-1/3 lg:p-8">
+        <div className="w-full sm:ml-[100px] lg:w-1/3 lg:p-8">
           <div className="flex justify-center">
             <motion.img
               initial={{ x: 100, opacity: 0 }}
