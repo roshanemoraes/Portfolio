@@ -17,7 +17,7 @@ const Hero = () => {
   return (
     <div className="border-b border-neutral-900 pb-4 lg:mb-35">
       <div className="flex flex-wrap">
-        <div className="w-full lg:mt-[160px] lg:w-1/2">
+        <div className="w-full mt-[160px] lg:w-1/2">
           <div className="flex flex-col items-center lg:items-start">
             <motion.h1
               variants={container(0)}
@@ -35,22 +35,30 @@ const Hero = () => {
             >
               I'm a
             </motion.div>
-            <motion.span
-              variants={container(0.6)}
-              initial="hidden"
-              animate="visible"
-              className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-6xl pb-2 tracking-tight text-transparent "
-            >
-              <Typewriter
-                words={["Full Stack Developer", "Software Engineer"]}
-                loop={false} // Set to false to run through each word once
-                cursor
-                cursorStyle="|"
-                typeSpeed={50}
-                deleteSpeed={30}
-                delaySpeed={1000} // Adjust delay between words
-              />
-            </motion.span>
+            <div className="sm:h-[300px] lg:min-h-[50px]  lg:h-auto">
+              <motion.span
+                variants={container(0.6)}
+                initial="hidden"
+                animate="visible"
+                className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-6xl pb-2 tracking-tight text-transparent "
+                style={{
+                  opacity: 1,
+                  willChange: "auto",
+                  transform: "none",
+                }}
+              >
+                <Typewriter
+                  words={["Full Stack Developer", "Software Engineer"]}
+                  loop={false} // Set to false to run through each word once
+                  cursor
+                  cursorStyle="|"
+                  typeSpeed={50}
+                  deleteSpeed={30}
+                  delaySpeed={1000} // Adjust delay between words
+                />
+              </motion.span>
+            </div>
+
             <motion.p
               variants={container(1)}
               initial="hidden"
