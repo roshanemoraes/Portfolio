@@ -86,7 +86,7 @@ const Header = () => {
       </div>
       <div className="hidden md:flex items-center gap-6">
         <a
-          href="https://github.com/WimukthiMadushan"
+          href="https://github.com/roshanemoraes"
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-400 hover:text-white"
@@ -106,7 +106,7 @@ const Header = () => {
           <span className="sr-only">GitHub</span>
         </a>
         <a
-          href="https://www.linkedin.com/in/wimukthi-madushan/"
+          href="https://www.linkedin.com/in/adam-moraes/"
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-400 hover:text-white"
