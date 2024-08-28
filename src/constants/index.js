@@ -1,7 +1,7 @@
 import project1 from "../assets/projects/project-1.png";
-import project2 from "../assets/projects/project-2.jpg";
-import project3 from "../assets/projects/project-3.jpg";
-import project4 from "../assets/projects/project-4.jpg";
+import project2 from "../assets/projects/project-2.png";
+import project3 from "../assets/projects/project-3.png";
+import project4 from "../assets/projects/project-4.png";
 
 //export const HERO_CONTENT = `I'm a third-year Computer Science and Engineering undergraduate at the University of Moratuwa, passionate about full-stack development. I specialize in React, Next.js, Spring Boot, Node.js, and Flask, with experience in MySQL, MongoDB, and Firebase. I'm driven by a strong focus on achieving my goals and creating impactful, scalable solutions that enhance user experiences.`;
 export const HERO_CONTENT = `I am a third-year undergraduate at the University of Moratuwa, passionately pursuing a degree in Computer Science and Engineering. With a strong foundation in both front-end and back-end development, I specialize in crafting dynamic and scalable web applications. Driven by a relentless enthusiasm for technology, I am goal-oriented and stay focused on my dreams of building innovative solutions that not only drive business growth but also deliver exceptional user experiences. I am committed to continuous learning and pushing the boundaries of what’s possible in the world of software development.`;
