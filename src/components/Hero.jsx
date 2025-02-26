@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import { HERO_CONTENT } from "./../constants/index";
 // import profilePic from "./../assets/20240520_144938.jpg";
 import profilePic from "./../assets/Profile-bg-remove-1.png";
