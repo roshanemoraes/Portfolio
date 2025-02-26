@@ -20,8 +20,12 @@ const container = (delay) => ({
 const Hero = () => {
   return (
     <div className="border-b border-neutral-900 pb-4 lg:mb-35">
+      <div className="grid grid-cols-2">
+        <div className="col-span-2 lg:col-span-1">aa</div>
+        <div className="col-span-2 lg:col-span-1">ss</div>
+      </div>
       <div className="flex flex-wrap">
-        <div className="w-full lg:mt-[70px] mt-[130px] lg:w-1/2">
+        <div className="lg:mt-[70px] mt-[130px] w-1/2">
           <div className="flex flex-col items-center lg:items-start">
             <div className="flex items-center text-[25px] lg:mt-16">
               Hello I'm
@@ -46,7 +50,7 @@ const Hero = () => {
                 variants={container(0.6)}
                 initial="hidden"
                 animate="visible"
-                className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-6xl pb-2 tracking-tight text-transparent "
+                className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text lg:text-6xl text-2xl  pb-2 tracking-tight text-transparent "
                 style={{
                   opacity: 1,
                   willChange: "auto",
@@ -64,7 +68,7 @@ const Hero = () => {
                 />
               </motion.span>
             </div>
-            <div className="h-[180px] ">
+            <div className="sm:h-[180px] ">
               <div className="grid grid-cols-12 mt-[40px] ml-[40px]">
                 <div className="col-span-1 flex items-center">
                   <motion.img
@@ -119,22 +123,32 @@ const Hero = () => {
               variants={container(1)}
               initial="hidden"
               animate="visible"
-              className="my-2 max-w-[890px] py-6 text-[#71717a] tracking-tighter text-justify"
+              className="my-2 max-w-[890px] hidden xs:block py-6 text-[#71717a] tracking-tighter text-justify"
               style={{ wordSpacing: "0.3em" }}
             >
               {HERO_CONTENT}
             </motion.p>
           </div>
         </div>
-        <div className="w-full sm:ml-[100px] lg:w-1/3 lg:p-8">
+        <div className=" w-1/2  lg:p-8 pt-8">
           <div className="flex justify-center">
             <motion.img
               initial={{ x: 100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 1.2 }}
+              whileHover={{
+                scale: 1.05,
+                transition: { duration: 0, delay: 0 },
+                border: "0.5px solid #a3a3a3",
+              }}
               src={profilePic}
               alt="Adam Moraes"
-              style={{ borderRadius: "20px" }}
+              style={{
+                borderRadius: "20px",
+                border: "0.5px solid #a3a3a3",
+                width: "380px",
+                height: "520px",
+              }}
             ></motion.img>
           </div>
         </div>
